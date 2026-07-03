@@ -1,0 +1,41 @@
+#health-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    pointer-events: none;
+    user-select: none;
+}
+
+#health-meter {
+    width: 150px;
+    height: 150px;
+    background-size: 300% 300%; /* 3 colunas x 3 linhas */
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
+}
+
+#health-meter.damage { animation: meterShake 0.3s ease; }
+@keyframes meterShake {
+    0%, 100% { transform: scale(1); }
+    30% { transform: scale(1.15) rotate(-4deg); }
+    60% { transform: scale(0.95) rotate(3deg); }
+}
+
+#health-meter.heal { animation: meterGlow 0.3s ease; }
+@keyframes meterGlow {
+    0% { filter: drop-shadow(0 0 0px rgba(0,255,80,0)); }
+    50% { filter: drop-shadow(0 0 14px rgba(0,255,80,0.9)); }
+    100% { filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6)); }
+}
+
+#health-meter.death { animation: meterDeath 0.6s ease forwards; }
+@keyframes meterDeath {
+    0% { transform: scale(1) rotate(0deg); opacity: 1; }
+    100% { transform: scale(0.3) rotate(180deg); opacity: 0; }
+}
