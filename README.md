@@ -1,6 +1,6 @@
 # Mario 64 – Cena 3D Interativa (Atividade 07 – Trabalho Final)
 
-<img src="ScreenShots/Mario" width="100%" />
+<img src="public/ScreenShots/Mario" width="100%" />
 
 Cena 3D interativa feita com **Three.js**, inspirada no *Super Mario 64*. O
 jogador controla o Mario em terceira pessoa por um cenário carregado de um
@@ -179,14 +179,14 @@ Duas camadas de física combinadas:
 ## Screenshots
 
 <p align="center">
-  <img src="ScreenShots/sc_1.png" width="45%" />
-  <img src="ScreenShots/sc_2.png" width="45%" />
+  <img src="public/ScreenShots/sc_1.png" width="45%" />
+  <img src="public/ScreenShots/sc_2.png" width="45%" />
 </p>
 <p align="center">
-  <img src="ScreenShots/sc_3.png" width="45%" />
-  <img src="ScreenShots/sc_4.png" width="45%" />
+  <img src="public/ScreenShots/sc_3.png" width="45%" />
+  <img src="public/ScreenShots/sc_4.png" width="45%" />
 </p>
 <p align="center">
-  <img src="ScreenShots/sc_5.png" width="45%" />
-  <img src="ScreenShots/sc_6.png" width="45%" />
+  <img src="public/ScreenShots/sc_5.png" width="45%" />
+  <img src="public/ScreenShots/sc_6.png" width="45%" />
 </p>
